@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+	<fontFamily name="Arimo">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/arimo/Arimo-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/arimo/Arimo-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/arimo/Arimo-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/arimo/Arimo-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">Arimo, Arial, Helvetica, sans-serif</export>
+			<export key="net.sf.jasperreports.xhtml">Arimo, Arial, Helvetica, sans-serif</export>
+		</exportFonts>
+	</fontFamily>
+	<fontFamily name="Tinos">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/tinos/Tinos-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/tinos/Tinos-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/tinos/Tinos-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/tinos/Tinos-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">Tinos, 'Times New Roman', Times, serif</export>
+			<export key="net.sf.jasperreports.xhtml">Tinos, 'Times New Roman', Times, serif</export>
+		</exportFonts>
+	</fontFamily>
+	<fontFamily name="Cousine">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/cousine/Cousine-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/cousine/Cousine-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/cousine/Cousine-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/cousine/Cousine-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">Cousine, 'Courier New', Courier, monospace</export>
+			<export key="net.sf.jasperreports.xhtml">Cousine, 'Courier New', Courier, monospace</export>
+		</exportFonts>
+	</fontFamily>
+	<fontFamily name="Caladea">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/caladea/Caladea-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/caladea/Caladea-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/caladea/Caladea-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/caladea/Caladea-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">Caladea, Cambria, Times, serif</export>
+			<export key="net.sf.jasperreports.xhtml">Caladea, Cambria, Times, serif</export>
+		</exportFonts>
+	</fontFamily>
+	<fontFamily name="Carlito">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/carlito/Carlito-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/carlito/Carlito-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/carlito/Carlito-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/carlito/Carlito-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">Carlito, Calibri, Helvetica, sans-serif</export>
+			<export key="net.sf.jasperreports.xhtml">Carlito, Calibri, Helvetica, sans-serif</export>
+		</exportFonts>
+	</fontFamily>
+	<fontFamily name="DejaVu Sans">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">'DejaVu Sans', Arial, Helvetica, sans-serif</export>
+			<export key="net.sf.jasperreports.xhtml">'DejaVu Sans', Arial, Helvetica, sans-serif</export>
+		</exportFonts>
+	</fontFamily>
+	<fontFamily name="DejaVu Serif">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">'DejaVu Serif', 'Times New Roman', Times, serif</export>
+			<export key="net.sf.jasperreports.xhtml">'DejaVu Serif', 'Times New Roman', Times, serif</export>
+		</exportFonts>
+	</fontFamily>
+	<fontFamily name="DejaVu Sans Mono">
+		<normal><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSansMono-Regular.ttf]]></normal>
+		<bold><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSansMono-Bold.ttf]]></bold>
+		<italic><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSansMono-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSansMono-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+		<exportFonts>
+			<export key="net.sf.jasperreports.html">'DejaVu Sans Mono', 'Courier New', Courier, monospace</export>
+			<export key="net.sf.jasperreports.xhtml">'DejaVu Sans Mono', 'Courier New', Courier, monospace</export>
+		</exportFonts>
+	</fontFamily>
+</fontFamilies>
