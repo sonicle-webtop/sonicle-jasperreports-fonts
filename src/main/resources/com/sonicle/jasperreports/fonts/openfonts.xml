@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fontFamilies>
+	<!--
+	https://packages.debian.org/stretch/all/fonts-croscore
+	https://github.com/google/fonts/tree/master/apache/arimo/
+	https://github.com/google/fonts/tree/master/apache/cousine/
+	https://github.com/google/fonts/tree/master/apache/tinos/
+	http://archive.ubuntu.com/ubuntu/pool/universe/f/fonts-crosextra-caladea/fonts-crosextra-caladea_20130214.orig.tar.gz
+	http://archive.ubuntu.com/ubuntu/pool/universe/f/fonts-crosextra-carlito/fonts-crosextra-carlito_20130920.orig.tar.gz
+	--> 
 	<fontFamily name="Arimo">
 		<normal><![CDATA[com/sonicle/jasperreports/fonts/arimo/Arimo-Regular.ttf]]></normal>
 		<bold><![CDATA[com/sonicle/jasperreports/fonts/arimo/Arimo-Bold.ttf]]></bold>
@@ -60,6 +68,10 @@
 			<export key="net.sf.jasperreports.xhtml">Carlito, Calibri, Helvetica, sans-serif</export>
 		</exportFonts>
 	</fontFamily>
+	<!--
+	https://dejavu-fonts.github.io/
+	https://github.com/dejavu-fonts/dejavu-fonts
+	--> 
 	<fontFamily name="DejaVu Sans">
 		<normal><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Regular.ttf]]></normal>
 		<bold><![CDATA[com/sonicle/jasperreports/fonts/dejavu/DejaVuSans-Bold.ttf]]></bold>
