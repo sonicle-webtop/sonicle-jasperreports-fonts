@@ -12,7 +12,11 @@ Extension for JasperReports that adds Open replacement to some widely used fonts
 - DejaVu Sans
 - DejaVu Serif
 - DejaVu Sans Mono
+- FontAwesome 5
+- New family "Sonicle" for some other custom symbols 
 
 ## License
 
 This is Open Source software released under [AGPLv3](./LICENSE.txt)
+
+Please note that every Font is distributed with its own license: you can find a copy in each folder.

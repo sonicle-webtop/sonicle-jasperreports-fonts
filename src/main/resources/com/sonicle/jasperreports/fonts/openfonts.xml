@@ -108,4 +108,30 @@
 			<export key="net.sf.jasperreports.xhtml">'DejaVu Sans Mono', 'Courier New', Courier, monospace</export>
 		</exportFonts>
 	</fontFamily>
+	<fontFamily name="FontAwesome">
+		<normal>
+			<ttf><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-regular-400.ttf]]></ttf>
+			<eot><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-regular-400.eot]]></eot>
+			<svg><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-regular-400.svg]]></svg>
+			<woff><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-regular-400.woff]]></woff>
+		</normal>
+		<bold>
+			<ttf><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-solid-900.ttf]]></ttf>
+			<eot><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-solid-900.eot]]></eot>
+			<svg><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-solid-900.svg]]></svg>
+			<woff><![CDATA[com/sonicle/jasperreports/fonts/fontawesome/fa-solid-900.woff]]></woff>
+		</bold>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="Sonicle">
+		<normal>
+			<ttf><![CDATA[com/sonicle/jasperreports/fonts/sonicle/Sonicle.ttf]]></ttf>
+			<eot><![CDATA[com/sonicle/jasperreports/fonts/sonicle/Sonicle.eot]]></eot>
+			<svg><![CDATA[com/sonicle/jasperreports/fonts/sonicle/Sonicle.svg]]></svg>
+			<woff><![CDATA[com/sonicle/jasperreports/fonts/sonicle/Sonicle.woff]]></woff>
+		</normal>
+		<pdfEncoding>Identity-H</pdfEncoding>
+		<pdfEmbedded>true</pdfEmbedded>
+	</fontFamily>
 </fontFamilies>
