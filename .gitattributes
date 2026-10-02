@@ -1,0 +1,126 @@
+# ============================================================================
+# WebTop - line ending normalization
+#
+# One rule: text is always LF, both in the repository AND on disk, on every
+# platform (Windows/NetBeans, macOS, Solaris 11). Identical bytes everywhere
+# means there is no conversion left to perform, so no two tools can compute it
+# differently. That is why this uses eol=lf and not eol=native: with "native"
+# the working copy on Windows goes back to CRLF and the conversion -- along
+# with the disagreement it causes between the git CLI and JGit/NetBeans --
+# comes right back.
+#
+# Exceptions are declared below, and only below:
+#   eol=crlf  files that Windows executes (.bat/.cmd/.ps1)
+#   -text     formats where CRLF is part of the format (iCalendar, MIME,
+#             vCard, patches): their bytes must never be rewritten
+#   binary    declared binaries, so we never depend on git's heuristic
+#   -diff     text that is pointless to diff (minified files, source maps)
+#
+# Keep this file IDENTICAL across all WebTop repositories.
+# ============================================================================
+
+# ---- Default --------------------------------------------------------------
+# text=auto: git tells text from binary, and text is normalized to LF.
+# "text" is deliberately NOT forced per extension: should a file hold binary
+# bytes (we have one, an .svg with lone CRs), text=auto leaves it alone.
+*                       text=auto eol=lf
+
+# ---- More readable diffs (per-language hunk headers) ----------------------
+*.java                  diff=java
+*.html                  diff=html
+*.htm                   diff=html
+*.css                   diff=css
+*.scss                  diff=css
+*.php                   diff=php
+*.md                    diff=markdown
+
+# ---- Text that is pointless to diff ---------------------------------------
+*.min.js                -diff
+*.min.css               -diff
+*.map                   -diff
+
+# ---- Must stay CRLF: Windows executes these -------------------------------
+*.bat                   text eol=crlf
+*.cmd                   text eol=crlf
+*.ps1                   text eol=crlf
+
+# ---- CRLF is part of the format: never touch the bytes --------------------
+# iCalendar/vCard (RFC 5545 / 6350) and MIME (RFC 5322) mandate CRLF.
+# This section is the reason a generic .gitattributes will not do for us.
+*.ics                   -text
+*.ical                  -text
+*.ifb                   -text
+*.vcf                   -text
+*.vcard                 -text
+*.eml                   -text
+*.mbox                  -text
+*.mime                  -text
+# A patch carries the line endings of its context: rewriting them voids it.
+*.patch                 -text
+*.diff                  -text
+
+# ---- Declared binaries ----------------------------------------------------
+# images
+*.png                   binary
+*.gif                   binary
+*.jpg                   binary
+*.jpeg                  binary
+*.bmp                   binary
+*.tif                   binary
+*.tiff                  binary
+*.ico                   binary
+*.svgz                  binary
+*.psd                   binary
+*.ai                    binary
+*.eps                   binary
+# fonts
+*.ttf                   binary
+*.otf                   binary
+*.eot                   binary
+*.woff                  binary
+*.woff2                 binary
+# audio / video / plugins
+*.mp3                   binary
+*.ogg                   binary
+*.aac                   binary
+*.wav                   binary
+*.mp4                   binary
+*.mov                   binary
+*.swf                   binary
+*.xap                   binary
+# archives and build artifacts
+*.zip                   binary
+*.gz                    binary
+*.bz2                   binary
+*.tgz                   binary
+*.tar                   binary
+*.7z                    binary
+*.rar                   binary
+*.jar                   binary
+*.war                   binary
+*.ear                   binary
+*.class                 binary
+*.so                    binary
+*.dll                   binary
+*.exe                   binary
+# documents and keystores
+*.pdf                   binary
+*.doc                   binary
+*.docx                  binary
+*.xls                   binary
+*.xlsx                  binary
+*.xlsm                  binary
+*.ppt                   binary
+*.pptx                  binary
+*.odt                   binary
+*.ods                   binary
+*.jks                   binary
+*.keystore              binary
+*.p12                   binary
+*.pfx                   binary
+
+# ---- Kept out of archives produced by git archive -------------------------
+.gitattributes          export-ignore
+.gitignore              export-ignore
+.gitkeep                export-ignore
+.git-blame-ignore-revs  export-ignore
